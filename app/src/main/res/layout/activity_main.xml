@@ -7,10 +7,10 @@
     tools:context=".view.MainActivity">
 
     <TextView
-        android:background="@color/vermelho"
         android:id="@+id/txtTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/vermelho"
         android:text="@string/txt_titulo"
         android:textColor="@color/black"
         android:textSize="18sp"
@@ -28,20 +28,9 @@
         android:layout_margin="16dp"
         android:ems="10"
         android:hint="@string/txt_hint_edit_primeiro_nome"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintTop_toBottomOf="@+id/txtTitulo"
-        tools:layout_editor_absoluteX="16dp"
-        android:importantForAutofill="no" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName4"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_margin="16dp"
-        android:ems="10"
-        android:hint="@string/txt_hint_edit_telefone_contato"
-        android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editSobrenome"
         tools:layout_editor_absoluteX="16dp" />
 
     <EditText
@@ -56,14 +45,27 @@
         tools:layout_editor_absoluteX="16dp" />
 
     <EditText
+        android:id="@+id/editTelefoneContato"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="124dp"
+        android:ems="10"
+        android:hint="@string/txt_hint_edit_telefone_contato"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editSobrenome"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
         android:id="@+id/editNomeCurso"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_margin="16dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
         android:hint="@string/txt_hint_edit_nome_do_curso"
         android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+        app:layout_constraintTop_toBottomOf="@+id/editTelefoneContato"
         tools:layout_editor_absoluteX="16dp" />
 
     <Button
@@ -74,19 +76,19 @@
         android:text="@string/txt_button_limpar"
         app:layout_constraintBottom_toTopOf="@+id/btnFinalizar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+        app:layout_constraintTop_toBottomOf="@+id/editNomeCurso"
         app:layout_constraintVertical_bias="0.831" />
 
     <Button
         android:id="@+id/btnSalvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="196dp"
+        android:layout_marginStart="96dp"
         android:text="@string/txt_button_salvar"
         app:layout_constraintBottom_toTopOf="@+id/btnFinalizar"
         app:layout_constraintStart_toEndOf="@+id/btnLimpar"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
-        app:layout_constraintVertical_bias="0.832" />
+        app:layout_constraintTop_toBottomOf="@+id/editNomeCurso"
+        app:layout_constraintVertical_bias="0.83" />
 
     <Button
         android:id="@+id/btnFinalizar"
@@ -98,6 +100,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editNomeCurso"
-        app:layout_constraintVertical_bias="0.312" />
+        app:layout_constraintVertical_bias="0.862" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
