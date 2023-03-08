@@ -1,4 +1,5 @@
 package devandroid.cezar.applistacurso.controller;
 
-public class CursoController {
+public class PessoaController {
+
 }
