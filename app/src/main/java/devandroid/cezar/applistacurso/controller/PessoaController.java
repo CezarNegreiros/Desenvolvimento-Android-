@@ -49,7 +49,7 @@ public class PessoaController {
 
     public void limpar(){
 
-        listaVip.clear();
-        listaVip.apply();
+        listaVip.clear(); //Limpa os dados da SharedPreferences
+        listaVip.apply(); //Salva os dados da SharedPreferences
     }
 }
